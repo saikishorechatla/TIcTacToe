@@ -7,7 +7,6 @@ let currentMove = 'X';
 let moves = [10, 10, 10, 10, 10, 10, 10, 10, 10];
 let xPosition = [];
 let oPosition = [];
-
 const checkWinner = (positions) => {
     if (positions.length < 3) return false;
     return winningPositions.some(position => 
@@ -48,7 +47,8 @@ boxes.forEach((box, index) => {
 const button = document.getElementsByTagName('button')[0];
 
 button.addEventListener('click', () => {
-    document.getElementById('p').removeChild(document.getElementById('p').childNodes[1])
+  if(document.getElementById('k'))
+    document.getElementById('p').removeChild(document.getElementById('k'))
     button.textContent = 'Restart';
     currentMove = 'X';
     moves = [0, 0, 0, 0, 0, 0, 0, 0, 0];
