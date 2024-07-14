@@ -1,0 +1,66 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding:0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    background:url('./static/R.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#heading{
+    width: 250px;
+    height: 40px;
+    border: solid;
+    text-align: center;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+.container{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap:wrap ;
+    width: 350px;
+    height: 350px;
+}
+.box{
+    width: 105px;
+    height: 105px;
+    border: solid;
+    border-radius: 4px;
+    position: relative;
+}
+button{
+    width: 120px;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    background: linear-gradient(45deg,#63ead62c,#637cea25);
+    backdrop-filter: blur(10px);
+    font-size: larger
+}
+button:hover{
+    height: 40px;
+    border:solid
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box{
+    backdrop-filter: blur(10px);
+}
+#p{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
